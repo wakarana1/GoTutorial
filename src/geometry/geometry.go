@@ -1,5 +1,11 @@
 package main
 
+/* import throws and error because it's not being used so using instance _ silences it
+  import (
+    "geometry/rectangle"
+  )
+var _ = rectangle.Area // error silencer
+*/
 import (
   "fmt"
   "geometry/rectangle" // IMPORTING CUSTOM PACKAGE
@@ -16,10 +22,10 @@ import (
  func init() {
    println("main package initialized")
    if rectLen < 0 {
-    log.Fatal("length is less than zero")
+    log.Fatal("length is less than zero") // terminates execution if true
    }
    if rectWidth < 0 {
-    log.Fatal("width is less than zero")
+    log.Fatal("width is less than zero") // terminates execution if true
    }
  }
 
