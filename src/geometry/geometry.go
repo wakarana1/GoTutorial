@@ -1,11 +1,17 @@
 package main
-
 /* import throws and error because it's not being used so using instance _ silences it
   import (
     "geometry/rectangle"
   )
 var _ = rectangle.Area // error silencer
 */
+
+/* if you need to import a package but don't need to use any functions
+  import (
+    _ "geometry/rectangle"
+  )
+*/
+
 import (
   "fmt"
   "geometry/rectangle" // IMPORTING CUSTOM PACKAGE
