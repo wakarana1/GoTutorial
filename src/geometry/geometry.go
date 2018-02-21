@@ -26,7 +26,7 @@ import (
  */
 
  func init() {
-   println("main package initialized")
+   Println("main package initialized")
    if rectLen < 0 {
     log.Fatal("length is less than zero") // terminates execution if true
    }
